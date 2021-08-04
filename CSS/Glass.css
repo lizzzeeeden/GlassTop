@@ -21,17 +21,16 @@ button {
 
 	display: block;
 	/*竖排buttons*/
-	margin: 0 auto;
+	margin: 0.3125rem auto;
 	/*水平居中*/
 
 	color: black;
 	font-size: 1rem;
-	margin-left: 10%;
-	margin-right: 10%;
+	height: 3.125rem;
+	width: 65%;
 	text-align: center;
 	outline: none;
 	/* border-bottom: none; */
-
 
 }
 
