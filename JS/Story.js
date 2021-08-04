@@ -1012,7 +1012,7 @@ window.onload = function() {
 			index: 19,
 			ownBtns: [29, 30, 0],
 			content: "可拉倒吧",
-			fontSize: 50,
+			fontSize: 3.125,
 			content: ["可拉倒吧"],
 		},
 		//20页
@@ -1645,7 +1645,7 @@ window.onload = function() {
 
 				//特殊字体大小
 				if (page[currPage].fontSize != undefined) {
-					p.style.fontSize = page[currPage].fontSize + 'px';
+					p.style.fontSize = page[currPage].fontSize + 'rem';
 				}
 			}
 			//后空行
