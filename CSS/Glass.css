@@ -21,8 +21,10 @@ button {
 
 	display: block;
 	/*竖排buttons*/
-	
-	margin: 0.3125rem auto;
+	margin-top: 0.3125rem;
+	margin-bottom: 0.3125rem;
+	margin-left: auto;
+	/* margin: 0.3125rem auto; */
 	/*水平居中*/
 
 	color: black;
