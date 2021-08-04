@@ -13,16 +13,14 @@ h2 {
 	font-size: 1.875rem;
 	color: black;
 }
-div#ChooseBtns{
-	align-items: center;
-}
+
 button {
 	/*过渡*/
 	transition-duration: 0.4s;
 
 	display: block;
 	/*水平居中*/
-	margin: 0.3125rem auto;
+	margin: 0 auto;
 	
 	/* 背景框 */
 	background-color: rgba(220, 220, 220, 0);
@@ -46,9 +44,7 @@ hr {
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
-button:active {
-	border: 0.1875rem solid rgba(255, 255, 255, 0);
-}
+
 
 button:hover {
 	background-color: rgba(236, 236, 236, 0.0);
