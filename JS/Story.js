@@ -2,6 +2,7 @@
 window.onload = function() {
 	var bLearnMushroom = false; //特殊参数，是否会种蘑菇
 
+
 	//按键内容
 	var btnsContent = [
 		//0号格式
@@ -1602,8 +1603,9 @@ window.onload = function() {
 
 			//赋上新页参数
 			currPage = btnsContent[page[currPage].ownBtns[n]].toPage;
+			//特殊页
 			switch (currPage) {
-				//特殊页
+				//可选种蘑菇页
 				case 27:
 					if (bLearnMushroom) {
 						page[currPage].ownBtns[1] = 44;
@@ -1627,6 +1629,7 @@ window.onload = function() {
 			storyContent.appendChild(hr);
 			//特殊页显示
 			switch (currPage) {
+				//剧终标题
 				case 84:
 					let h2 = document.createElement("h2"); //新建段落
 					h2.innerText = "剧终";
@@ -1663,5 +1666,4 @@ window.onload = function() {
 			})
 		};
 	}
-
 }
