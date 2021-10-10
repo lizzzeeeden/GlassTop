@@ -30,19 +30,19 @@ fontSize: 0,//字体大小，为一些特殊页添加的特殊效果，默认则
 页面初始化时为按钮附上监听事件  
 ```js
 for (let n = 0; n < 3; n++) {
-    btns[n].onclick = function() {
-		  //特殊按键（一些特殊剧情点）
-		  switch (currBtns[n]) {    //注意这里的currBtns是动态的，会随着onclick更新
-			  //学习种蘑菇（该选项可影响后续的剧情，ppt中无法实现这个需求）
-			  case 9:
-				  bLearnMushroom = true;
-				break;
-				//再演
-		  	case 131:
-				  location.reload();
-			  break;
-		 }
-
+	btns[n].onclick = function() {
+		//特殊按键（一些特殊剧情点）
+		switch (currBtns[n]) {    //注意这里的currBtns是动态的，会随着onclick更新
+			//学习种蘑菇（该选项可影响后续的剧情，ppt中无法实现这个需求）
+			case 9:
+				bLearnMushroom = true;
+			break;
+			//再演
+			case 131:
+				location.reload();
+			break;
+		}
+		
 		//赋上新页参数
 		currPage = btnsContent[page[currPage].ownBtns[n]].toPage;
 		//特殊页
@@ -64,10 +64,10 @@ for (let n = 0; n < 3; n++) {
 				btns[i].innerHTML = btnsContent[page[currPage].ownBtns[i]].content;
 			}
 		}
-
+		
 		//文本显示
-    //在html中有一个id为story的块，所有的故事文本在该块中根据选项动态生成
-    
+    		//在html中有一个id为story的块，所有的故事文本在该块中根据选项动态生成
+    	
 		//水平分隔线
 		let hr = document.createElement("hr");
 		storyContent.appendChild(hr);
@@ -89,7 +89,7 @@ for (let n = 0; n < 3; n++) {
 			let p = document.createElement("p"); //新建段落
 			p.innerText += page[currPage].content[i];
 			storyContent.appendChild(p);
-
+	
 			//特殊字体大小
 			if (page[currPage].fontSize != undefined) {
 				p.style.fontSize = page[currPage].fontSize + 'rem';
@@ -103,8 +103,8 @@ for (let n = 0; n < 3; n++) {
 		if (page[currPage].endColor != undefined) {
 			document.body.style.backgroundColor = page[currPage].endColor;
 		}
-    
-    //点击后窗口滚动到新文本处
+    	
+    		//点击后窗口滚动到新文本处
 		window.scrollTo({
 			top: hr.offsetTop,
 			behavior: 'smooth',
